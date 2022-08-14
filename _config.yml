@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Rob Marlow - Software Engineer with a bunch of goofy hobbies
+title: Rob Marlow - Software Engineer
 email: robertjmarlow@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal site for Rob Marlow.
@@ -34,6 +34,23 @@ minimal_mistakes_skin: dark
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+
+include: ["_pages"]
+
+author:
+  name: "Rob Marlow"
+  avatar: "/assets/images/head shot.jpg"
+  bio: "I run long distances for fun."
+  location: "Kansas City, MO, USA, Earth"
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
