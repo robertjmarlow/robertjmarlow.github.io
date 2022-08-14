@@ -42,6 +42,16 @@ author:
   avatar: "/assets/images/head shot.jpg"
   bio: "I run long distances for fun."
   location: "Kansas City, MO, USA, Earth"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/robertjmarlow/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/robertjmarlow"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/robertjmarlow"
 
 defaults:
   # _pages
