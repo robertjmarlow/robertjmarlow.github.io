@@ -22,7 +22,7 @@ title: Rob Marlow - Software Engineer with a bunch of goofy hobbies
 email: robertjmarlow@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal site for Rob Marlow.
-baseurl: "https://robertjmarlow.github.io/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: robertjmarlow
 github_username:  robertjmarlow
