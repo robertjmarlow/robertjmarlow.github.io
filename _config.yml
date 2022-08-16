@@ -37,6 +37,9 @@ plugins:
 
 include: ["_pages"]
 
+atom_feed:
+  hide: true
+
 author:
   name: "Rob Marlow"
   avatar: "/assets/images/head shot.jpg"
