@@ -1,0 +1,5 @@
+main:
+  - title: "Foo"
+    url: /foo/
+  - title: "Bar"
+    url: /bar/
