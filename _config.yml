@@ -55,6 +55,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/robertjmarlow"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/robert-marlow-743b9412"
+    - label: "Strava"
+      icon: "fab fa-fw fa-strava"
+      url: "https://strava.com/athletes/17165892"
 
 defaults:
   # _pages
