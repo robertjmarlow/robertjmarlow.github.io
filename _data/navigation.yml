@@ -1,4 +1,6 @@
 main:
+  - title: "GitHub Projects"
+    url: /github-projects/
   - title: "Foo"
     url: /foo/
   - title: "Bar"
