@@ -12,7 +12,7 @@ I'm a major proponent of having tiny personal projects that use languages / fram
 
 <div class="small sub-header-bottom"><b>Technologies Used</b>: <i>Ruby css Jekyll</i></div>
 
-👋 Hi! You are here! GitHub Pages has made it _super simple_ to get a website off the ground _and_ hosted all on GitHub. The feature I like the most is the extremely fast deployment process on every `git push`. Here's a screenshot below for a 55 second deployment from a previous commit:
+👋 Hi! You are here! GitHub Pages has made it _super simple_ to get a website off the ground _and_ hosted all on GitHub. The feature I like the most is the extremely fast deployment process on every `git push`. Here's a screenshot below for a 55 second deployment from a commit:
 
 ![pages deployment]({{ "/assets/images/github-pages-deployment.png" | relative_url }})
 
@@ -56,4 +56,14 @@ Stuff I'd like to add:
 - **Add thumbnails** The database in use is good old [H2](https://www.h2database.com/html/main.html) and I have no clue how _images_ would be stored / retrieved on there. Moving toward a "real" database like Mongo or Redis would be fun, too.
 - **Deploy to cloud** One of the most difficult parts of software development is deploying. Even this tiny test project would have several challenges to overcome to get it available at a public URL.
 
-<!-- ## Electron Demo -->
+## Electron Demo
+
+<div class="small"><a href="https://github.com/robertjmarlow/electron-demo">🔗 on GitHub</a></div>
+
+<div class="small sub-header-bottom"><b>Technologies Used</b>: <i>Electron NodeJS WebPack Babel React JavaScript</i></div>
+
+Everything runs on [Electron](https://www.electronjs.org/) nowadays! From [Slack](https://slack.com/) to [Teams](https://www.microsoft.com/en-us/microsoft-teams/log-in) to [VSCode](https://code.visualstudio.com/)! You've got dozens of gigabytes of RAM--may as well use all of them in a ton of V8 child processes! 😅
+
+Electron gets a lot of hate because [it's pretty much a glorified Chrome window](https://www.reddit.com/r/ProgrammerHumor/comments/v9ar7b/no_you_dont_understand_memeory_is_cheap/?utm_source=share&utm_medium=web2x&context=3), but it _is_ cross-platform and it _is_ pretty easy to write a frontend with the huge amount of JavaScript libraries out there. Sooooooo 🤷‍♂️ **Ship It**, I guess 🐿.
+
+This app does some simple NodeJS stuff like reading the file system and getting some Operating System info--stuff that can't be done in a normal website for numerous security concerns. It's pretty basic.
