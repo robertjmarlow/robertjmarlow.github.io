@@ -1,3 +1,5 @@
 main:
-  - title: "GitHub Projects"
-    url: /github-projects/
+  - title: GitHub Projects
+    url: /github-projects
+  - title: Running
+    url: /running
