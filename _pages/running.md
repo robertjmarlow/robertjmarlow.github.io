@@ -10,7 +10,29 @@ A few years later (and many pairs of [Brooks Adrenaline running shoes](https://w
 
 Here are my PRs:
 
-|Distance|Race Name|Location|Finish Time|Average Pace|Strava Link|Event Results Link|
-|---|---|---|---|---|---|---|
-{% for race in site.data.running-prs %}{{race.distance}}|{{race.event.name}}|{{race.event.location}}|{{race.finish-time}}|{{race.average-pace}}|{{race.strava-link}}|{{race.event.results-link}}
-{% endfor %}
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: right">Distance</th>
+            <th>Race Name</th>
+            <th>Location</th>
+            <th style="text-align: right">Finish Time</th>
+            <th style="text-align: right">Average Pace</th>
+            <th style="text-align: center">Strava Link</th>
+            <th style="text-align: center">Event Results Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for race in site.data.running-prs %}
+        <tr>
+            <td style="text-align: right">{{race.distance}}</td>
+            <td>{{race.event.name}}</td>
+            <td>{{race.event.location}}</td>
+            <td style="text-align: right"><span class="pr-time">{{race.finish-time}}</span></td>
+            <td style="text-align: right"><span class="pr-time">{{race.average-pace}}</span><span class="pr-min-per-mi">min/mi</span></td>
+            <td style="text-align: center"><a href ="{{race.strava-link}}"><i class="fab fa-strava fa-2x"></i></a></td>
+            <td style="text-align: center"><a href ="{{race.event.results-link}}"><i class="fas fa-running fa-2x"></i></a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

@@ -1,24 +1,32 @@
 - distance: 5k
-  finish-time: 0:00
-  average-pace: 00:00 min/mi
-  strava-link: "[strava.com](https://www.strava.com/)"
+  finish-time: "21:07"
+  average-pace: "6:48"
+  strava-link: "https://www.strava.com/activities/1717350305"
   event:
-    name: foo
-    location: KC
-    results-link: ""
+    name: Famous Racing Sausages 5k
+    location: Milwaukee, WI
+    results-link: "https://app.raceresults360.com/#/race/pLYguc//800"
 - distance: 10k
-  finish-time: 0:00
-  average-pace: 00:00 min/mi
-  strava-link: ""
+  finish-time: "46:45"
+  average-pace: "7:32"
+  strava-link: "https://www.strava.com/activities/1287286369"
   event:
-    name: bar
-    location: OP
-    results-link: ""
-- distance: Marathon
-  finish-time: "3:58:39"
-  average-pace: 9:07 min/mi
-  strava-link: ""
+    name: Ward Parkway Thanksgiving Day run
+    location: Kansas City, MO
+    results-link: "https://www.athlinks.com/event/16102/results/Event/605079/Course/1013375/Bib/700"
+- distance: Half Marathon
+  finish-time: "1:43:15"
+  average-pace: "7:53"
+  strava-link: "https://www.strava.com/activities/2855514086"
   event:
     name: Garmin Kansas City Marathon
     location: Kansas City, MO
-    results-link: "[results](https://onlineraceresults.com/race/view_race.php?race_id=73929&re_NO=e.g.%2C+1946&re_FN=e.g.%2C+Joe&re_LN=Marlow&re_CITY=&re_STATE=&re_DIVISION=&re_extra_1=e.g.%2C+Team+NCR&submit_action=select_result&race_id=73929#results)"
+    results-link: "https://www.athlinks.com/event/20233/results/Event/838203/Course/1511524/Bib/335"
+- distance: Marathon
+  finish-time: "3:58:39"
+  average-pace: "9:07"
+  strava-link: "https://www.strava.com/activities/6122162813"
+  event:
+    name: Garmin Kansas City Marathon
+    location: Kansas City, MO
+    results-link: "https://onlineraceresults.com/race/view_race.php?race_id=73929&re_NO=e.g.%2C+1946&re_FN=e.g.%2C+Joe&re_LN=Marlow&re_CITY=&re_STATE=&re_DIVISION=&re_extra_1=e.g.%2C+Team+NCR&submit_action=select_result&race_id=73929#results"
