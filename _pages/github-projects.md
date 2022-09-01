@@ -1,5 +1,5 @@
 ---
-permalink: /github-projects/
+permalink: /github-projects
 
 title: Projects on GitHub
 ---

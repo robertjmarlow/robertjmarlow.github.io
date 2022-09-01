@@ -1,5 +1,5 @@
 ---
-permalink: /running/
+permalink: /running
 ---
 
 A few years ago, I realized I needed a hobby that involved more than Netflix and my couch. I passed by KC's [Trolley Track trail](https://www.traillink.com/trail/harry-wiggins-trolley-track-trail/) one day and I thought it would be nice to give it a little walk. So I grabbed a hoodie and some old Asics I found in the closet and started walking. I was getting bored after about a block so I started to up the pace a bit until I was going at a pace which could be described as "slightly faster than a walk". I was tired after about a quarter of a mile.
