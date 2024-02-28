@@ -11,6 +11,12 @@ Clone this repo, then install jekyll and bundler gems in the root of the repo:
 gem install jekyll bundler
 ```
 
+Install gems with bundler:
+
+```sh
+bundle install
+```
+
 # Running
 
 ```sh
