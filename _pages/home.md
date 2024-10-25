@@ -8,4 +8,4 @@ header:
 
 Hi there 👋! My name's Rob and I write software. I also have a bunch of goofy hobbies.
 
-Links to stories about some of my GitHub projects are up way there at the top ☝
+Links to stories about some of my GitHub projects are up way there at the top ☝️
