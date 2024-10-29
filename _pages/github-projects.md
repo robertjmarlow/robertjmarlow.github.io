@@ -2,6 +2,20 @@
 permalink: /github-projects
 
 title: Projects on GitHub
+
+gallery:
+    - url: /assets/images/wordcloud-Cinco de Drinko.png
+      image_path: /assets/images/wordcloud-Cinco de Drinko.png
+      alt: "Cinco de Drinko"
+      title: "Cinco de Drinko - Submit a song for Cinco De Mayo"
+    - url: /assets/images/wordcloud-Friday Feeling.png
+      image_path: /assets/images/wordcloud-Friday Feeling.png
+      alt: "Friday Feeling"
+      title: "Friday Feeling - It's Friday and you're driving back home and the windows are down"
+    - url: /assets/images/wordcloud-Irish Drinking Songs.png
+      image_path: /assets/images/wordcloud-Irish Drinking Songs.png
+      alt: "Irish Drinking Songs"
+      title: "Irish Drinking Songs - Submit a song for St. Pat's"
 ---
 
 I'm a major proponent of having tiny personal projects that use languages / frameworks / technologies / etc.. that you don't use in your normal 40+ hour work week. Here's a few that I've made over the years.
@@ -15,6 +29,31 @@ I'm a major proponent of having tiny personal projects that use languages / fram
 👋 Hi! You are here! GitHub Pages has made it _super simple_ to get a website off the ground _and_ hosted all on GitHub. The feature I like the most is the extremely fast deployment process on every `git push`. Here's a screenshot below for a 55 second deployment from a commit:
 
 ![pages deployment]({{ "/assets/images/github-pages-deployment.png" | relative_url }})
+
+## Playlist Word Cloud Generator
+
+<div class="small"><a href="https://github.com/robertjmarlow/playlist-word-cloud-generator">🔗 on GitHub</a></div>
+
+<div class="small sub-header-bottom"><b>Technologies Used</b>: <i>Java Gradle Spring</i></div>
+
+My friends and I were playing [Music League](https://musicleague.com/). It's basically a song "Popularity Contest": There's a theme for the round (e.g. "Irish Drinking Songs" (the round took place near St. Pat's)) and everyone submits a song that best fits the theme for the round. At the end of the round everyone votes on what they think is the song that best fits the theme for the round. Scores are accumulated over many rounds and a winner is declared after ten to twenty rounds. I won once 🥇 and got third twice 🥉🥉.
+
+I thought it would be fun to take the generated playlists and make wordclouds out them. Here's the results:
+
+{% include gallery caption="Music League wordclouds" %}
+
+Playlists got generated on Spotify. It was pretty easy to [use their API](https://developer.spotify.com/documentation/web-api/reference/get-playlist) to get the list of songs. A big problem was that the lyrics APIs:
+
+1. Didn't exist in the collection of Spotify APIs.
+1. [Existed from MusicMatch](https://developer.musixmatch.com/), but wasn't free (and that's just not fun for a side-project).
+
+So, I ended up using the [Genius APIs](https://docs.genius.com/#/getting-started-h1) (they're free).
+
+The _next_ problem to solve was that there wasn't a way to use the song ids from Spotify on Genius. I had to use the Genius "search" API for every song and, well, _hope_ the correct song returns. A little bit of [clever software workarounds](https://github.com/robertjmarlow/playlist-word-cloud-generator/blob/ea44b374f517d39b90bd23495e33cb3d2a0fa955/src/main/java/com/marlowsoft/playlistwordcloudgenerator/lyrics/genius/GeniusSongSearchImpl.java#L81) were needed to get "correct" results back.
+
+After (hopefully) getting the correct lyrics back, they were all [put together in a single `List`](https://github.com/robertjmarlow/playlist-word-cloud-generator/blob/ea44b374f517d39b90bd23495e33cb3d2a0fa955/src/main/java/com/marlowsoft/playlistwordcloudgenerator/PlaylistWordCloudGeneratorApplication.java#L66), [boring words](https://github.com/robertjmarlow/playlist-word-cloud-generator/blob/ea44b374f517d39b90bd23495e33cb3d2a0fa955/src/main/resources/boring-words.json) [were removed](https://github.com/robertjmarlow/playlist-word-cloud-generator/blob/ea44b374f517d39b90bd23495e33cb3d2a0fa955/src/main/java/com/marlowsoft/playlistwordcloudgenerator/util/LyricsMassagingUtils.java#L28), and then they were all sent into [kennycason/kumo wordcloud generator](https://github.com/kennycason/kumo). Custom colors could be applied so I tried my best to stick with the theme (e.g. St. Pat's = green; 4th of July = red, white, and blue). This is all set in the [`setColorPalette` method in the wordcloud API](https://github.com/robertjmarlow/playlist-word-cloud-generator/blob/ea44b374f517d39b90bd23495e33cb3d2a0fa955/src/main/java/com/marlowsoft/playlistwordcloudgenerator/wordcloud/WordCloudGeneratorImpl.java#L26).
+
+I thought the results were neat 👍.
 
 ## Three Trails Timelapse
 
