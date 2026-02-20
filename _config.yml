@@ -29,7 +29,7 @@ github_username:  robertjmarlow
 repository: "robertjmarlow/robertjmarlow.github.io"
 
 # Build settings
-remote_theme: mmistakes/minimal-mistakes@4.26.2
+remote_theme: mmistakes/minimal-mistakes@4.27.3
 minimal_mistakes_skin: dark
 plugins:
   - jekyll-feed
